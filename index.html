@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GaviRu Sandiptha</title>
+  <style>
+    /* Reset CSS */
+    body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Background Color Animation */
+    body {
+      animation: bgAnimation 10s infinite alternate;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    @keyframes bgAnimation {
+      0% { background: linear-gradient(135deg, #000428, #004e92); }
+      50% { background: linear-gradient(135deg, #4e00b6, #ff0084); }
+      100% { background: linear-gradient(135deg, #001f3f, #0074e4); }
+    }
+
+    /* Animated Name with Scrolling Effect */
+    .header {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 0px 0px 10px #ffcc00, 0px 0px 20px #ff6600;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      animation: scrollName 10s linear infinite;
+    }
+
+    @keyframes scrollName {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Gradient Circle */
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, #ff6600, #ffcc00, transparent);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      animation: pulseCircle 5s infinite alternate;
+    }
+
+    @keyframes pulseCircle {
+      0% { transform: translate(-50%, -50%) scale(1); }
+      100% { transform: translate(-50%, -50%) scale(1.2); }
+    }
+
+    /* Social Media Links */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      padding: 10px 20px;
+      border: 2px solid #ff6600;
+      border-radius: 8px;
+      transition: all 0.4s;
+      box-shadow: 0px 0px 10px #ff6600;
+    }
+
+    .social-links a:hover {
+      background: #ff6600;
+      color: black;
+      box-shadow: 0px 0px 20px #ffcc00;
+      transform: scale(1.1);
+    }
+
+    /* Page Buttons */
+    .links {
+      margin-top: 50px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      color: white;
+      border: 2px solid #ffcc00;
+      border-radius: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.4s ease;
+      box-shadow: 0px 0px 15px #ffcc00, 0px 0px 25px #ff6600;
+      animation: fire 2s infinite alternate;
+    }
+
+    .button:hover {
+      background: #ffcc00;
+      color: black;
+      transform: scale(1.1);
+      box-shadow: 0px 0px 30px #ff6600;
+    }
+
+    @keyframes fire {
+      0% { box-shadow: 0px 0px 15px #ffcc00; }
+      100% { box-shadow: 0px 0px 25px #ff6600; }
+    }
+
+    /* Radio Player */
+    .radio-player {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Circle -->
+  <div class="circle"></div>
+
+  <!-- Header -->
+  <div class="header">GaviRu Sandiptha</div>
+
+  <!-- Social Media Links -->
+  <div class="social-links">
+    <a href="https://youtube.com/@gavirusandiptha_" target="_blank">YouTube</a>
+    <a href="https://www.facebook.com/share/1PaXuhSutZ/" target="_blank">Facebook</a>
+    <a href="https://vm.tiktok.com/ZS6eRF6tv/" target="_blank">TikTok</a>
+  </div>
+
+  <!-- Other Page Links -->
+  <div class="links">
+    <a href="https://gavirusada.github.io/page21/" class="button" target="_blank">Calculator</a>
+    <a href="https://gavirusada.github.io/page222/" class="button" target="_blank">Number</a>
+  </div>
+
+  <!-- Radio Player -->
+  <div class="radio-player">
+    <a href="https://zeno.fm/radio/gavirusandipthaofficial/" class="button" target="_blank">Listen to GaviRu Sandiptha Radio</a>
+  </div>
+</body>
+</html>
